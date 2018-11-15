@@ -5,4 +5,4 @@
       shell: echo  "hello"
       register: out
     - debug: 
-        msg: "{{ out.stdout }}"
+        var: "{{ out.stdout_lines }}"
