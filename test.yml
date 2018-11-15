@@ -4,4 +4,4 @@
     - name: Running shell command
       command: pwd
       register: out
-    - debug: var=out.stdout_lines
+    - debug: msg="{{out.stdout}}"
