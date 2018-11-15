@@ -2,6 +2,7 @@
 - hosts: localhost
   tasks:
     - name: Running shell command
-      command: pwd
+      shell: pwd
       register: out
-    - debug: msg="{{out.stdout}}"
+    - debug: 
+        msg: "{{out.stdout}}"
